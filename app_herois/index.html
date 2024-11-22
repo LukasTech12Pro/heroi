@@ -40,36 +40,92 @@
 
                     </ul>
                     <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-                        <button class="btn btn-primary">Notificação</button>
+                        <button id="toggle-theme" class="btn btn-primary">Alterar tema</button>
                     </div>
                 </div>
             </div>
         </nav>
 
         <main>
-            <section class="py-5 text-center container">
-                <div class="row py-lg-5">
-                    <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="fw-light">Super Herois</h1>
-                        <p class="lead text-body-secondary">Os maiores super-heróis do universo estão aqui! Encontre os seus heróis favoritos, com histórias incríveis e poderes imbatíveis. Prepare-se para embarcar em aventuras épicas e descobrir tudo sobre os ícones que conquistaram o mundo</p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="container-fluid mt-3">
-                <div class="card" style="width: 18rem;">
-                    
-                    <div class="card-body" id="photo-hero">
-                        <img src="..." class="card-img-top" alt="...">
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    
-                    <div class="card-body" id="photo-hero">
-                        <img src="..." class="card-img-top" alt="...">
-                    </div>
+            <div class="px-4 py-5 my-0 text-center" id="apresentacao">
+                <img class="d-block mx-auto mb-4" src="/image/escudo-heroi.png" alt="" width="72" height="57">
+                <h1 class="display-5 fw-bold text-body-emphasis">Super Herois</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4 fs-3" id="text-heroi">Os maiores super-heróis do universo estão aqui! Encontre os seus heróis favoritos, com histórias incríveis e poderes imbatíveis. Prepare-se para embarcar em aventuras épicas e descobrir tudo sobre os ícones que conquistaram o mundo.</p>
                 </div>
             </div>
+
+            <div class="container px-4 py-5" id="custom-cards">
+                <h2 class="pb-2 border-bottom">Custom cards</h2>
+            
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-heroi" style="background-image: url(/image/batman.jpg);">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Batman</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="/image/dccomics_logo.jpg" alt="DC" width="32" height="32" class="rounded-circle border border-white">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                                        <small>DC Comics</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                                        <small>01-05-1939</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-heroi" style="background-image: url('/image/spiderman.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Homem-Aranha</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="/image/marvel.jpg" alt="Marvel Comics" width="32" height="32" class="rounded-circle border border-white">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                                        <small>Marvel Comics</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                                        <small>01-06-1938</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-heroi" style="background-image: url('/image/flash.jpg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Flash</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="/image/dccomics_logo.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                                    <small>DC Comics</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                                    <small>10/01/1956</small>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
         </main>
 
         <!-- Modal de sucesso -->
@@ -95,7 +151,7 @@
             </div>
 
     <!-- Footer -->
-        <footer class="fixed-bottom d-flex flex-wrap justify-content-between align-items-center py-3 my-0 border-top w-100" id="footer">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0 border-top w-100" id="footer">
             <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
         
             <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">

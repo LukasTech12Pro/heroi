@@ -1,11 +1,30 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
 }
 
 #foto {
     width: 50px;
+}
+
+#apresentacao {
+    background-image: url(/image/superheroi_wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+}
+
+#card-heroi {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#text-heroi {
+    color: white;
 }
 
 /* #footer {
