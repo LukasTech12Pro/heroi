@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Heois</title>
-    <link rel="shortcut icon" href="/image/escudo-heroi.png" type="image/x-icon">
+    <title>Super Herois</title>
+    <link rel="shortcut icon" href="image/escudo-heroi.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary rounded border-bottom" aria-label="Thirteenth navbar example">
+        <nav class="navbar navbar-expand-lg" aria-label="Thirteenth navbar example" id="nav">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -18,12 +18,12 @@
     
                 <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
                     <a class="navbar-brand col-lg-3 me-0" href="index.html">
-                        <img src="/image/escudo-heroi.png" alt="logo" srcset="" width="30" height="25" class="d-inline-block align-text-top">
+                        <img src="/app_herois/image/escudo-heroi.png" alt="logo" srcset="" width="30" height="25" class="d-inline-block align-text-top">
                     </a>
                     <ul class="navbar-nav col-lg-6 justify-content-lg-center">
                         
                         <li class="nav-item">
-                            <a class="nav-link px-2" href="/src/cadastro/cadHerois.html">Cadastro de Herois</a>
+                            <a class="nav-link px-2" href="src/cadastro/cadHerois.html">Cadastro de Herois</a>
                         </li>
 
                         <li class="nav-item">
@@ -31,24 +31,24 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link px-2" href="/src/cadastro/cadEquipe.html">Cadastro de Equipe</a>
+                            <a class="nav-link px-2" href="src/cadastro/cadEquipe.html">Cadastro de Equipe</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link px-2" href="/src/lista/listaEquipes.html">Lista de Equipes</a>
+                            <a class="nav-link px-2" href="src/lista/listaEquipes.html">Lista de Equipes</a>
                         </li>
 
                     </ul>
                     <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-                        <button id="toggle-theme" class="btn btn-primary">Alterar tema</button>
+                        <button id="toggle-theme" class="btn btn-primary" onclick="toggleDarkMode()">Alterar tema</button>
                     </div>
                 </div>
             </div>
         </nav>
 
         <main>
-            <div class="px-4 py-5 my-0 text-center" id="apresentacao">
-                <img class="d-block mx-auto mb-4" src="/image/escudo-heroi.png" alt="" width="72" height="57">
+            <div class="px-4 py-5 text-center" id="apresentacao">
+                <img class="d-block mx-auto mb-4" src="/app_herois/image/escudo-heroi.png" alt="" width="72" height="57">
                 <h1 class="display-5 fw-bold text-body-emphasis">Super Herois</h1>
                 <div class="col-lg-6 mx-auto">
                     <p class="lead mb-4 fs-3" id="text-heroi">Os maiores super-heróis do universo estão aqui! Encontre os seus heróis favoritos, com histórias incríveis e poderes imbatíveis. Prepare-se para embarcar em aventuras épicas e descobrir tudo sobre os ícones que conquistaram o mundo.</p>
@@ -61,12 +61,12 @@
                 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                     
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-heroi" style="background-image: url(/image/batman.jpg);">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-heroi" style="background-image: url(/app_herois/image/batman.jpg);">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Batman</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
                                     <li class="me-auto">
-                                        <img src="/image/dccomics_logo.jpg" alt="DC" width="32" height="32" class="rounded-circle border border-white">
+                                        <img src="/app_herois/image/dccomics_logo.jpg" alt="DC" width="32" height="32" class="rounded-circle border border-white">
                                     </li>
                                     <li class="d-flex align-items-center me-3">
                                         <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
@@ -82,12 +82,12 @@
                     </div>
             
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-heroi" style="background-image: url('/image/spiderman.jpg');">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-heroi" style="background-image: url('/app_herois/image/spiderman.jpg');">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Homem-Aranha</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
                                     <li class="me-auto">
-                                        <img src="/image/marvel.jpg" alt="Marvel Comics" width="32" height="32" class="rounded-circle border border-white">
+                                        <img src="/app_herois/image/marvel.jpg" alt="Marvel Comics" width="32" height="32" class="rounded-circle border border-white">
                                     </li>
                                     <li class="d-flex align-items-center me-3">
                                         <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
@@ -103,12 +103,12 @@
                     </div>
             
                     <div class="col">
-                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-heroi" style="background-image: url('/image/flash.jpg');">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card-heroi" style="background-image: url('/app_herois/image/flash.jpg');">
                             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Flash</h3>
                                 <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
-                                    <img src="/image/dccomics_logo.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                                    <img src="/app_herois/image/dccomics_logo.jpg" alt="DC" width="32" height="32" class="rounded-circle border border-white">
                                 </li>
                                 <li class="d-flex align-items-center me-3">
                                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
@@ -155,7 +155,7 @@
             <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
         
             <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="/image/escudo-heroi.png" alt="" srcset="" width="40" height="32">
+                <img src="/app_herois/image/escudo-heroi.png" alt="" srcset="" width="40" height="32">
             </a>
         
             <ul class="nav col-md-4 justify-content-end">
@@ -169,6 +169,6 @@
 
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src=""></script>
+    <script src="js/darkmode.js"></script>
 </body>
 </html>
